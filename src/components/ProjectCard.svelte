@@ -21,7 +21,7 @@
 
 	<div class="relative z-10 mb-4">
 		<img src={`/projects/${project.imageUrl}`} class=" rounded-md" alt="" />
-		<h2 class="text-2xl font-bold text-amber-900">{project.title}</h2>
+		<h2 class="my-2 text-2xl font-bold text-amber-900">{project.title}</h2>
 	</div>
 
 	<div class="relative z-10">
