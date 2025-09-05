@@ -11,7 +11,7 @@
 />
 
 <div class="app">
-	<div class="  h-[] flex h-[80vh] items-center justify-center p-10">
+	<div class="  flex h-[80vh] items-center justify-center p-10">
 		<div class=" ">
 			<img src="/247.png" alt="" />
 			<p

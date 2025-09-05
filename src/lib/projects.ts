@@ -2,6 +2,15 @@ import type { Project } from './types/Project';
 
 export const projects: Project[] = [
 	{
+		id: 'bereans',
+		title: 'Bereans',
+		description:
+			'A community-centered bible QnA platform wth focus on trustworhyness and credibility.',
+		imageUrl: 'Bereans.png',
+		techStack: ['NextJs', 'React', 'tRPC', 'Drizzle'],
+		repoUrl: 'http://github.com/henacodes/bereans'
+	},
+	{
 		id: 'andimta',
 		title: 'Andimta',
 		description:
