@@ -11,7 +11,8 @@
 />
 
 <div class="app">
-	<div class="  flex h-[80vh] items-center justify-center p-10">
+	<p class=" -mb-5 p-5 font-bold text-[#72410D]">Henok Ayenew</p>
+	<div class=" flex h-[80vh] items-center justify-center p-10">
 		<div class=" ">
 			<img src="/247.png" alt="" />
 			<p
@@ -30,17 +31,31 @@
 			</div>
 		</div>
 
-		<div class=" bio-div relative z-10 flex h-full flex-col items-center justify-center">
-			<p class=" text-4xl font-semibold text-[#72410D]">{me.name}</p>
-			<p>{me.education}</p>
+		<!-- <div
+			class="bio-div relative z-10 flex h-full w-full max-w-[700px] flex-col items-center justify-center px-4 md:px-0"
+		>
+			<div class=" relative z-0 mb-[-70%]">
+				<div id="parchment"></div>
 
-			<p class=" mt-5 font-bold">Tools</p>
-			<ul class="flex list-disc">
-				{#each me.tools as tool}
-					<li class=" mx-4">{tool}</li>
-				{/each}
-			</ul>
-		</div>
+				<svg>
+					<filter id="wavy2">
+						<feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1"></feTurbulence>
+						<feDisplacementMap in="SourceGraphic" scale="20" />
+					</filter>
+				</svg>
+			</div>
+			<div class=" relative z-10">
+				<p class="text-4xl font-semibold text-[#72410D]">{me.name}</p>
+				<p>{me.education}</p>
+
+				<p class="mt-5 font-bold">Tools</p>
+				<ul class="flex list-disc flex-wrap justify-center gap-3">
+					{#each me.tools as tool}
+						<li class="mx-2">{tool}</li>
+					{/each}
+				</ul>
+			</div>
+		</div> -->
 	</div>
 	<img src="/tribal-colors.png" class=" mt-20 w-[100vw]" alt="" />
 	<div class="bg-[#72410D] py-14">
@@ -68,11 +83,15 @@
 		}
 	}
 
-	.bio-div {
-		width: 700px;
-		background-image: url('/papyrus.png');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
+	#parchment {
+		display: flex;
+		width: 50vw;
+		min-height: calc((1vw + 1vh) * 23);
+		/* center page with absolute position */
+		box-shadow:
+			2px 3px 20px black,
+			0 0 60px #8a4d0f inset;
+		background: #fffef0;
+		filter: url(#wavy2);
 	}
 </style>
