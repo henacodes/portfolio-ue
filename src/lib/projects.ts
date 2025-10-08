@@ -2,6 +2,14 @@ import type { Project } from './types/Project';
 
 export const projects: Project[] = [
 	{
+		id: 'epubix',
+		title: 'Epubix',
+		description: 'a typescript utility library that parses EPUB files.',
+		imageUrl: 'Epubix.png',
+		techStack: ['Typescript'],
+		repoUrl: 'https://github.com/henacodes/epubix'
+	},
+	{
 		id: 'bereans',
 		title: 'Bereans',
 		description:
