@@ -21,6 +21,16 @@ export const projects: Project[] = [
 		repoUrl: 'https://github.com/henacodes/epubix'
 	},
 	{
+		id: 'reut',
+		title: 'Reut',
+		description: 'A platform that connects AASTU dormmates before they move to campus',
+		imageUrl: 'Reut.jpg',
+		imageUrls: ['Reut.jpg', 'Reut1.jpg', 'Reut2.jpg'],
+		techStack: ['Svelte', 'Drizzle', 'Typescript'],
+		repoUrl: 'https://github.com/henacodes/reut',
+		liveUrl: 'https://aastu-reut.vercel.app/'
+	},
+	{
 		id: 'bereans',
 		title: 'Bereans',
 		description:

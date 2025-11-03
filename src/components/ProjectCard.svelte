@@ -71,7 +71,7 @@ const hasImages = $derived(images.length > 0);
       >
         <img
           src={`/projects/${images[0]}`}
-          class="rounded-md w-full object-cover"
+          class="rounded-md  object-cover w-full h-[200px] "
           alt={`${project.title} preview image 1 of ${images.length}`}
           loading="lazy"
           decoding="async"
